@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: msuno-client
+    
+server:
+  port: 8095
+  
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 119.29.58.11
+  client:
+    service-url:
+      defaultZone: http://119.29.58.11:8090/eureka
+
+logging:
+  level:
+    com.netflix.eureka: ON
+    com.netflix.discovery: ON
