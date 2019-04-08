@@ -31,7 +31,7 @@ class ServiceInstanceRestController{
             @PathVariable String applicationName) {
         return this.discoveryClient.getInstances(applicationName);
     }
-	@RequestMapping("/server-instances/test")
+	@RequestMapping(value = "/server-instances/test", produces = {"application/json"})
 	public String test() {
 		return "msuno-server-8091";
 	}
